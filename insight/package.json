@@ -1,0 +1,15 @@
+{
+  "name": "insight-socialsync",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SocialSync Convex backend for insight Spectacles Lens",
+  "scripts": {
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "convex": "^1.17.0",
+    "typescript": "^5.6.0"
+  }
+}

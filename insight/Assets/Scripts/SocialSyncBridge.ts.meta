@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/16a8bd54-4378-4f86-a8c3-4b5508690cb5>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> ab814668-ba2f-4f72-8885-5d38a46b8532
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> ab814668-ba2f-4f72-8885-5d38a46b8532
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 8d843b42-2d5b-42d3-890b-19becfa0ec8e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/8d843b42-2d5b-42d3-890b-19becfa0ec8e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: e4945e2b-a6ca-4fdd-9e05-87c99e9d777c
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    asrController: false
+    convexIngestUrl: false
+    debugLog: false
+    enableFaceCapture: false
+    hintText: false
+    hintTtlSec: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - convexIngestUrl: ""
+      asrController: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      hintText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      enableFaceCapture: true
+      hintTtlSec: !<float> 10.000000
+      debugLog: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"SocialSync — Convex endpoint"}'
+    - '// @input string convexIngestUrl {"hint":"Full URL: https://YOUR_DEPLOYMENT.convex.site/socialsync/ingest"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"Wiring"}'
+    - '// @input AssignableType asrController {"hint":"Leave empty if on same object as ASRQueryController"}'
+    - '// @input Component.Text hintText {"hint":"Drag the Text COMPONENT (not SceneObject) where hints should appear"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"label", "label":"Options"}'
+    - '// @input bool enableFaceCapture = true {"hint":"Send camera frame for Hume face analysis (uses credits)"}'
+    - '// @input float hintTtlSec = 10 {"hint":"Auto-clear hint after N seconds (0 = keep)"}'
+    - // @input bool debugLog = true
